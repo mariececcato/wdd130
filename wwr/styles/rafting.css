@@ -1,0 +1,115 @@
+/* ===== Color scheme and fonts ===== */
+:root {
+    --primary-color: #0b5563;
+    /* deep river teal */
+    --secondary-color: #e8f1f2;
+    /* river mist */
+    --accent1-color: #1d2d44;
+    /* dark slate */
+    --accent2-color: #f28f3b;
+    /* life jacket orange */
+
+    --heading-font: "Bitter", Georgia, serif;
+    --body-font: "Source Sans 3", Arial, sans-serif;
+}
+
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== General page ===== */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* ===== Header ===== */
+header img {
+    width: 150px;
+    margin: 16px 16px 0;
+}
+
+header nav a {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+/* ===== Hero with overlays ===== */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 60%;
+    margin: 0;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    border-left: 6px solid var(--accent2-color);
+    opacity: 0.9;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 0 0 8px 12px;
+    border: 3px solid #fff;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--secondary-color);
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    margin-right: 8px;
+}
